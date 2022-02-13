@@ -18,8 +18,9 @@ const server = http_1.default.createServer(async (req, res) => {
         req.on('data', (chunk) => {
             data += chunk;
         }).on('end', () => {
-            let shap_data = shap_1.shap(data);
-            let msg = shap_data ? shap_data : "真面目に遊べ!";
+            const shapData = shap_1.shap(data);
+            let msg;
+            shapData ? msg = shapData : msg = '真面目に遊べ!!';
             slack_1.sendMessagePostMethod(msg);
         });
         res.end();

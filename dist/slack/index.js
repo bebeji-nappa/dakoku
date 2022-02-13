@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sendMessagePostMethod = exports.sendMessageSegata = exports.sendMessageGetMethod = exports.join = void 0;
 const web_api_1 = require("@slack/web-api");
 require('dotenv').config();
-const web = new web_api_1.WebClient(process.env.SLACK_TOKEN);
-const conversationId = 'XXXXXXXXXXXX';
+const web = new web_api_1.WebClient(process.env.SLACK_API_TOKEN);
+const conversationId = 'C01CA78NM7U';
 const msg = [
     'セガサターーーーン、シローーーーーーーーーーーーーーーーー!!!!',
     '若者よ...\n真剣に取り組んでいるものはあるか?命がけで打ち込んでいる物があるか?\nセガサターン、シロ!\n指が折れるまで......指が折れるまで!',

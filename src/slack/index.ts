@@ -1,8 +1,8 @@
-import { WebAPICallResult, WebClient } from '@slack/web-api'
+import { WebClient } from '@slack/web-api'
 
 require('dotenv').config()
-const web:WebClient = new WebClient(process.env.SLACK_TOKEN)
-const conversationId:string = 'XXXXXXXXXXXX'
+const web:WebClient = new WebClient(process.env.SLACK_API_TOKEN)
+const conversationId:string = 'C01CA78NM7U'
 
 const msg:string[] = [
   'セガサターーーーン、シローーーーーーーーーーーーーーーーー!!!!',
